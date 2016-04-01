@@ -1,0 +1,84 @@
+mixin pricing(data)
+	+b('section').pricing
+		+e.in
+			+e.list
+				+e.plan._1
+					+e('h2').plan-title На первое <br/>время
+
+					+b('ul').services
+						+e('li').service._1
+							+e.service-icon
+							+e.service-title Разработка <br/>логотипа
+						+e('li').service._2
+							+e.service-icon
+							+e.service-title Разработка дизайна <br/>визитки
+						+e('li').service._3
+							+e.service-icon
+							+e.service-title Печать 100 визиток
+
+					+e.price
+						+e.price-w
+							+e.price-text Стоимость:
+							+e.price-val 5000
+							+e.price-curr &#8381;
+
+					+e.button-w
+						+e('a').button(href='#link') Заказать
+
+				+e.plan._2
+					+e('h2').plan-title Время активных <br/>продаж
+
+					+b('ul').services
+						+e('li').service._1
+							+e.service-icon
+							+e.service-title Разработка <br/>логотипа
+						+e('li').service._2
+							+e.service-icon
+							+e.service-title Разработка дизайна <br/>визитки
+						+e('li').service._3
+							+e.service-icon
+							+e.service-title Печать 100 визиток
+						+e('li').service._4
+							+e.service-icon
+							+e.service-title Буклет о компании, <br/>4 страницы
+
+					+e.price
+						+e.price-w
+							+e.price-text Стоимость:
+							+e.price-val 7000
+							+e.price-curr &#8381;
+
+					+e.button-w
+						+e('a').button(href='#link') Заказать
+
+
+				+e.plan._3
+					+e('h2').plan-title Будь агрессивнее!
+
+					+b('ul').services
+						+e('li').service._1
+							+e.service-icon
+							+e.service-title Разработка <br/>логотипа
+						+e('li').service._2
+							+e.service-icon
+							+e.service-title Разработка дизайна <br/>визитки
+						+e('li').service._3
+							+e.service-icon
+							+e.service-title Печать 100 визиток
+						+e('li').service._4
+							+e.service-icon
+							+e.service-title Буклет о компании, <br/>4 страницы
+						+e('li').service._5
+							+e.service-icon
+							+e.service-title Видео о компании, <br/>1 минута
+
+					+e.price
+						+e.price-w
+							+e.price-text Стоимость:
+							+e.price-val 17000
+							+e.price-curr &#8381;
+
+					+e.button-w
+						+e('a').button(href='#link') Заказать
+
+

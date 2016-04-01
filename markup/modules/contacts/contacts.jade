@@ -1,0 +1,35 @@
+mixin contacts(data)
+	+b('section').contacts
+		+e.in
+			+e('h2').title Контакты
+
+			+e.w
+				+e.text <span>ООО «ФАБРИК»</span> 199155, Россия, Санкт-Петербург ул. Уральская, 1, корпус 2, лит. А, офис 233
+
+
+				+e.phones
+					+e.phone-icon
+					+e.phone-number + 7 (812) 245-07-06
+					+e.phone-number + 7 (911) 227-90-29
+
+				+e.emails
+					+e.email-icon
+					+e('a').email(href='mailto:ds.fabriq@gmail.com') ds.fabriq@gmail.com
+					+e('a').email(href='mailto:info@fabrique.pro') info@fabrique.pro
+
+			+e.form
+				+e('form')(method='post' action='/')
+					+e.input-w
+						+e.input
+							+e('input')(type='text' value='' placeholder='Имя')
+						+e.input
+							+e('input')(type='text' value='' placeholder='E-mail')
+						+e.input
+							+e('input')(type='text' value='' placeholder='Телефон')
+					+e.textarea
+						+e('textarea')(placeholder='Сообщение')
+					+e.submit
+						+e('input')(type='submit' value='Отправить')
+
+
+

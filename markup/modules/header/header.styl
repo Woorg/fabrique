@@ -1,0 +1,56 @@
+.header
+	border-top 19px solid #ffba00
+	&__in
+		position relative
+		padding-top 25px
+		@extend .in
+		padding-bottom 28px
+		clearfix()
+
+.logo
+	float left
+	bg($logo)
+	hide-text()
+
+.phones
+	margin-top 15px
+	margin-left 604px
+	float left
+	&__icon
+		margin-right 20px
+		display inline-block
+		vertical-align middle
+		bg($phone-icon)
+	&__number
+		display inline-block
+		vertical-align middle
+		font-family $roboto-med
+		font-size 28px
+		font-weight normal
+		color #5b5b5b
+	&__sep
+		padding-left 8px
+		padding-right 6px
+		display inline-block
+		vertical-align middle
+
+.social
+	position absolute
+	top 34px
+	right 0
+	&__item
+		margin-left 10px
+		display inline-block
+		vertical-align middle
+		hide-text()
+	&__item_vk
+		bg($vk)
+		&:hover
+			bg($vk-hover)
+	&__item_fb
+		bg($fb)
+		&:hover
+			bg($fb-hover)
+
+
+

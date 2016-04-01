@@ -1,0 +1,95 @@
+.clients
+	border-top 4px solid #e1e1e1
+	border-bottom 4px solid #e1e1e1
+	overflow hidden
+	&__in
+		padding-top 39px
+		// padding-bottom
+		@extend .in
+	&__text
+		position relative
+		padding-bottom 34px
+		line-height 40px
+		text-transform uppercase
+		text-align center
+		letter-spacing tracking(-27px)
+		&:after
+			position absolute
+			content ""
+			bottom -19px
+			left 50%
+			margin-left -150px
+			bg($arrow-down)
+.slider
+	position relative
+	padding-top 37px
+	padding-bottom 24px
+	&__list
+		font-size 0
+		clearfix()
+	&__item
+		display inline-block
+		vertical-align top
+		width 16.666666667%
+	&__item_1
+		.slider__icon
+			margin-top 40px
+			margin-left 9px
+			bg($client-1)
+	&__item_2
+		.slider__icon
+			margin-top 18px
+			margin-left 12px
+			bg($client-2)
+	&__item_3
+		.slider__icon
+			margin-top 33px
+			margin-left -50px
+			bg($client-3)
+	&__item_4
+		.slider__icon
+			margin-top 30px
+			margin-left 74px
+			bg($client-4)
+	&__item_5
+		.slider__icon
+			margin-top 32px
+			margin-left 1px
+			bg($client-5)
+	&__item_6
+		.slider__icon
+			margin-top 48px
+			margin-left -47px
+			bg($client-6)
+.slider-nav
+	position absolute
+	top 74px
+	width 100%
+
+	&__item
+		position absolute
+		top 0
+		hide-text()
+	&__item_back
+		left -80px
+		bg($slider-left)
+		&:hover
+			bg($slider-left-hover)
+	&__item_next
+		right -80px
+		bg($slider-right)
+		&:hover
+			bg($slider-right-hover)
+
+
+.owl-item
+	float left
+
+
+
+
+
+
+
+
+
